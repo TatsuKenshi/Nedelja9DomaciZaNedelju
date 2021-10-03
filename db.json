@@ -1,0 +1,34 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Tex Viler - Krvava Zora/Poslednje Uporiste",
+      "price": 199.99,
+      "desc": "Posle ljutog okrsaja kod Rocestera, Tex i Profesor Okultis hitaju da spasu garnizon utvrdjenja Andervil od opsade Cejena i Crnih Stopala!"
+    },
+    {
+      "id": 2,
+      "name": "Zagor - Oci Juga",
+      "price": 249.99,
+      "desc": "Duz Misisipija misteriozna sila podize mrtve iz grobova..."
+    },
+    {
+      "id": 3,
+      "name": "Dilan Dog - Praznicni Trobroj",
+      "price": 299.99,
+      "desc": "Tri do sada neobjavljivane epizode vaseg omiljenog detektiva nadrealnog!"
+    },
+    {
+      "id": 4,
+      "name": "Blek Stena - Veliki Blek Protiv Grofa Smirnofa",
+      "price": 149.99,
+      "desc": "Da li ce Veliki Blek osujetiti dijabolcni plan Grofa Smirnofa i spreciti iskrcavanje Ruske Vojske na obale zaliva Hadson?"
+    },
+    {
+      "id": 5,
+      "name": "Alan Ford - Super Hik Uzvraca Udarac",
+      "price": 224.99,
+      "desc": "Drugi deo sage o Super Hiku, najvecem negativcu u istoriji negativaca."
+    }
+  ]
+}
