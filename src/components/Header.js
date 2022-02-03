@@ -3,8 +3,8 @@ import StyledHeader from "../styles/StyledHeader";
 const Header = () => {
   return (
     <StyledHeader>
-      <h1>Stripoteka Hijavata</h1>
-      <h3>Najveci digitalni strip kiosk na nasim prostorima</h3>
+      <h1>Hiawatha Comic Book Store</h1>
+      <h3>Your digital comic book kiosk</h3>
     </StyledHeader>
   );
 };

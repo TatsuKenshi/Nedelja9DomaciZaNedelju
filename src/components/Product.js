@@ -1,5 +1,5 @@
 import { useState } from "react";
-import StyledProduct from "../styles/StyledProduct"
+import StyledProduct from "../styles/StyledProduct";
 
 const Product = ({ product, total, setTotal, tax, setTax }) => {
   const [quantity, setQuantity] = useState(0);
@@ -8,17 +8,17 @@ const Product = ({ product, total, setTotal, tax, setTax }) => {
   return (
     <StyledProduct>
       <p>
-        {product.name} {product.price}
+        {product.name} ${product.price}
       </p>
 
-      <p>Kolicina: {quantity}</p>
+      <p>Quantity: {quantity}</p>
 
       <button
         onClick={() => {
           setShowInfo(!showInfo);
         }}
       >
-        Prikazi Info
+        Show Info
       </button>
 
       <p>{showInfo === true ? product.desc : ""}</p>

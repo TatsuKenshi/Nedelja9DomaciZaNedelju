@@ -6,14 +6,14 @@ const ProductForm = ({ setProductList }) => {
   const [name, setName] = useState("");
   const [price, setPrice] = useState("");
   const [desc, setDesc] = useState("");
-  const [errorMsg, setErrorMsg] = useState("")
+  const [errorMsg, setErrorMsg] = useState("");
 
   return (
     <StyledProductForm>
-      <h2>Novi Proizvod</h2>
+      <h2>New Product</h2>
       <hr />
 
-      <label htmlFor="name">ime:</label>
+      <label htmlFor="name">Name</label>
       <br />
       <input
         type="text"
@@ -26,7 +26,7 @@ const ProductForm = ({ setProductList }) => {
       />
       <br />
 
-      <label htmlFor="price">cena:</label>
+      <label htmlFor="price">Price</label>
       <br />
       <input
         type="number"
@@ -39,7 +39,7 @@ const ProductForm = ({ setProductList }) => {
       />
       <br />
 
-      <label htmlFor="desc">info:</label>
+      <label htmlFor="desc">Info</label>
       <br />
       <input
         type="text"
@@ -56,16 +56,18 @@ const ProductForm = ({ setProductList }) => {
       <button
         onClick={() => {
           if (name !== "" && price > 0 && desc !== "") {
-            setErrorMsg("")
+            setErrorMsg("");
             newProduct(name, price, desc).then((res) => {
               setProductList((prev) => [...prev, res.data]);
             });
           } else {
-            setErrorMsg("Neispravan unos. Ime i info ne smeju biti prazna polja, a cena mora biti veca od nule.")
+            setErrorMsg(
+              "Neispravan unos. Ime i info ne smeju biti prazna polja, a cena mora biti veca od nule."
+            );
           }
         }}
       >
-        Napravi Proizvod
+        Create
       </button>
       <br />
       <br />
