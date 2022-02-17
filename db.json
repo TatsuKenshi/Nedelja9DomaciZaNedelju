@@ -29,6 +29,12 @@
       "name": "Alan Ford - Super Hick Strikes Back",
       "price": 24.99,
       "desc": "Second part of the saga of Super Hick, the biggest villain in the history of villainous villains."
+    },
+    {
+      "name": "Zagor  - The Return of the Blondie",
+      "price": "29.99",
+      "desc": "The Blondie returns to haunt Zagor more than 20 years after her death. What does her reappearance mean for the ghost with the hatchet?",
+      "id": 6
     }
   ]
 }
