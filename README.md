@@ -30,6 +30,8 @@ Aside from React.js, I also used
 Main features of this app include:
 
 - fetching/displaying the list of products
+
+- adding new products
   The user can add new products to the database via the product form in the upper portion of the page.
 
 - calculating the price of the shopping cart
@@ -53,32 +55,23 @@ npm install
 
 npm start
 
-5.
+If you get an error, try installing an older version of node.js (I recommend 14.18.3), switch to it, and try again.
+
+5. The local and live databases are separate, but their contents are identical. To spin up the local one, open a new terminal instance in your code editor/IDE and enter the following command:
+
+json-server -p 3005 --watch db.json
 
 ## API Reference
 
-Depending on the size of the project, if it is small and simple enough the reference docs can be added to the README. For medium size to larger projects it is important to at least provide a link to where the API reference docs live.
-
-## Tests
-
-Describe and show how to run the tests with code examples.
+No APIs were used in this project.
 
 ## How to use?
 
-If people like your project they’ll want to learn how they can use it. To do so include step by step guide to use your project.
+- how to add new products to the list
+  You can add new products to the database via the product form in the upper portion of the page. Fill out the required fields and submit the form.
 
-## Contribute
+- how to edit the shopping cart
+  You can also add any of the displayed products to the cart, which automatically calculates the total price. The "-" and "+" buttons allow you to decrease and increase the amounts for every individual item separately. There is no cap, and you can theoretically add as many copies of each comic book as you want.
 
-Let people know how they can contribute into your project. A [contributing guideline](https://github.com/zulip/zulip-electron/blob/master/CONTRIBUTING.md) will be a big plus.
-
-## Credits
-
-Give proper credits. This could be a link to any repo which inspired you to build this project, any blogposts or links to people who contrbuted in this project.
-
-#### Anything else that seems useful
-
-## License
-
-A short snippet describing the license (MIT, Apache etc)
-
-MIT © [Yourname]()
+- see product description
+  The Show Info button displays and hides the product description.
